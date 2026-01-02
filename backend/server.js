@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 // Allow only your frontend origin 
 app.use(cors({
-   origin: process.env.FRONTEND_ORIGIN||"http://localhost:5173", 
+   origin: "https://todo-app-727u.onrender.com", 
    methods: ["GET", "POST", "PUT", "DELETE"],
    credentials: true }));
 app.use(express.json());
