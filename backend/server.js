@@ -15,6 +15,9 @@ app.use(cors({
 app.use(express.json());
 app.use('/api/todo',router)
 app.get("/health", (req, res) => { res.status(200).send("OK"); });
+
+
+
 app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`);
   connectDb();
